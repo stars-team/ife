@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+}
+
+body {
+    font: bold 15px "Microsoft YaHei", Helvetica, Arial, Sans;
+}
+
+#header {
+    background-color: #343434;
+    min-height: 3.5em;
+    overflow:hidden;
+}
+
+#logo {
+    float: left;
+    padding-left: 35px;
+    height: 10%;
+    display: inline-block;
+}
+
+.teamname {
+    padding-top: 18px;
+    padding-left: 65px;
+    font-size: larger;
+    color: white;
+    font-family: Helvetica, Arial, Sans;
+}
+
+h3 ,address ,h4 {
+    color: #cccccc;
+    margin: 0.5em 0;
+}
+
+#nav {
+/*    border: solid 1px red;*/
+    float: right;
+    margin-top: -2em;
+}
+
+#nav li {
+    float: left;
+    padding-right: 2.5em;
+    margin: 0.5em 0;
+    overflow:auto;
+}
+
+#nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+#nav li a:hover {
+    color: cornflowerblue;
+}
+
+#content {
+/*    border: solid 1px red;*/
+    background-color:  #dfdfdf;
+    padding: 30px;
+}
+
+.passage {
+/*    border: solid 1px red;*/
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 15px;
+    border-style: none solid solid none;
+    border-radius: 20px 5px 5px;
+/*    border-bottom-style: solid;
+    border-right: solid;*/
+    border-color: #999999;
+}
+
+.passage li {
+    margin: 0.5em 0;
+}
+
+figure div{
+    width: 500px;
+    border-style: solid;
+    border-width: thin;
+    border-color: #cccccc;
+    padding: 15px;
+    margin: 10px 6px 6px 40px;
+    font-family: "Heiti SC";
+}
+
+figure div>img {
+    width: 100%;
+
+}
+
+@media all and (max-width: 800px) {
+    figure div>img {
+        margin: 6px;
+        width: 100%;
+    }
+    figure div {
+        width: 80%;
+        margin: 10px 6px 6px 5%;
+    }
+
+    article>img {
+        width: 70%;
+    }
+}
+
+.passage table {
+    border: 1px solid;
+    border-collapse: collapse;  /*边框会合并为一个单一的边框*/
+    width: 100%;
+}
+
+.passage td {
+    border: 1px solid #cccccc;
+    padding: 3px;
+    font-size: 0.8em;
+}
+
+.passage thead {
+    background-color: #343434;
+    color: white;
+}
+
+.passage .last {
+    background-color: #cccccc;
+    /*font-weight:bold;*/
+}
+
+#info {
+    margin-top: 10px;
+    border-style: none;
+}
+
+#info td {
+    padding: 5px;
+    border-style: none;
+
+    font-weight: normal;
+}
+
+td textarea {
+    width: 50%;
+    font-size: small;
+}
+
+.subtext {
+    text-align: right;
+}
+
+.suggest {
+    color: #cccccc;
+    font-size: 0.8em;
+}
+
+.submit {
+    width: 100%;
+    height: 40px;
+    color: white;
+    font-size: 1.1em;
+    background-color: rgb(54,85,205);
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+
+}
+
+.submit:focus,.submit:hover {
+    background-color: #3390b7;
+}
+
+footer {
+    padding-top: 1.5em;
+    background: #000;
+    color: #fff;
+    min-height: 3.8em;
+    text-align: center;
+}
