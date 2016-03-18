@@ -87,14 +87,15 @@ figure div{
 }
 
 figure div>img {
+    display: inline-block;
     width: 100%;
 
 }
 
 @media all and (max-width: 800px) {
     figure div>img {
-        margin: 6px;
-        width: 100%;
+        margin: 0 auto;
+        /*width: 100%;*/
     }
     figure div {
         width: 80%;
