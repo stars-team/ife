@@ -1,0 +1,60 @@
+#content {
+    position: relative;
+    overflow: hidden;
+}
+
+#content:after, #content:before {
+    clear: both;
+    content: " ";
+}
+
+.aside {
+    position: relative;
+    float: right;
+    width: 300px;
+
+}
+
+.leftside {
+    width: calc(100% - 390px);
+    width: -moz-calc(100% - 390px);
+    width: -webkit-calc(100% - 390px);
+    position: relative;
+    float: left;
+
+}
+
+article > img {
+    max-width: 500px;
+    width: 70%;
+}
+
+figure div > img {
+    margin: 0 auto;
+    /*width: 100%;*/
+}
+
+
+figure div {
+    /*width: calc(95% - 20px);
+    max-width: 500px;
+    margin: 10px 16px 6px 5%;*/
+    display: inline-block;
+    max-width: 163px;
+    width: 60%;              /*适应宽度*/
+    line-height: 24px;
+    margin-right: 0;
+    margin-left: 8px;
+}
+
+@media all and (max-width: 680px) {
+    .leftside{
+        width: 100%;
+    }
+
+    .aside {
+        width: calc(100% - 60px);
+        width: -moz-calc(100% - 60px);
+        width: -webkit-calc(100% - 60px);
+    }
+}
