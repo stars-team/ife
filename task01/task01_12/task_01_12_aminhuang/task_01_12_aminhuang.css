@@ -1,0 +1,154 @@
+/*
+* @Author: aminhuang
+* @Date:   2016-03-19 19:47:19
+* @Last Modified by:   aminhuang
+* @Last Modified time: 2016-03-20 17:57:04
+*/
+
+html,body {
+    font-family:"Microsoft YaHei",微软雅黑,"Microsoft JhengHei",华文细黑,STHeiti,MingLiu;
+}
+
+
+.table thead {
+    background: #000;
+    color: #fff;
+}
+
+.table tbody tr:nth-child(1), tr:nth-child(2), tr:nth-child(3)  {
+    color: #f00;
+}
+.table tbody tr:nth-child(even) {
+    background: #ccc;
+}
+
+.input {
+    width: 50px;
+}
+.input:focus {
+    width: 100px;
+}
+
+
+ul,li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.wrap {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    margin: 30px auto;
+    border: 1px solid #9cc5ef;
+    overflow: hidden;
+}
+
+.slider {
+    width: 300%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    margin-left: 0;
+    /**/
+    animation: slide1 4s ease-out infinite; 
+}
+
+.slider li {
+    float: left;
+    width: 600px;
+    height: 100%;
+}
+
+.slider li:nth-child(1) {
+    background: #6bacef;
+}
+
+.slider li:nth-child(2) {
+    background: #297cd3;
+}
+
+.slider li:nth-child(3) {
+    background: #124a84;
+}
+
+/* ---三种动画策略--- */
+@keyframes slide1 {
+    0% { margin-left: 0; }
+    23% { margin-left: 0; }
+    33% { margin-left: -600px; }
+    56% { margin-left: -600px; }
+    66% { margin-left: -1200px; }
+    90% { margin-left: -1200px; }
+    100% { margin-left: 0; }
+}
+
+@keyframes slide2 {
+    0% { margin-left: -600px; }
+    23% { margin-left: -600px; }
+    33% { margin-left: -1200px; }
+    56% { margin-left: -1200px; }
+    66% { margin-left: 0; }
+    90% { margin-left: 0; }
+    100% { margin-left: -600px; }
+}
+
+@keyframes slide3 {
+    0% { margin-left: -1200px; }
+    23% { margin-left: -1200px; }
+    33% { margin-left: 0; }
+    56% { margin-left: 0; }
+    66% { margin-left: -600px; }
+    90% { margin-left: -600px; }
+    100% { margin-left: -1200px; }
+}
+
+/* ---更改动画名称--- */
+#slider1:checked ~ .wrap .slider {
+    animation-name: slide1;
+}
+
+#slider2:checked ~ .wrap .slider {
+    animation-name: slide2;
+}
+
+#slider3:checked ~ .wrap .slider {
+    animation-name: slide3;
+}
+
+/*  ---模拟重启动画--- */
+#slider1:active ~ .wrap .slider {
+    animation-name: none;
+    margin-left: 0;
+}
+#slider2:active ~ .wrap .slider {
+    animation-name: none;
+    margin-left: -600px;
+}
+#slider3:active ~ .wrap .slider {
+    animation-name: none;
+    margin-left: -1200px;
+}
+
+.options {
+    color: #fff;
+    text-align: center;
+}
+
+.options label {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    margin-right: 4px;
+    background: #01254a;
+    cursor: pointer;
+}
+
+.options label:hover {
+    background: #405871;
+}
+
+.slider-control {
+    display: none;
+}
