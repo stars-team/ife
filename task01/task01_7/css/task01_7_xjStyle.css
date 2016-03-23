@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+.width-1280 {
+    min-width: 1280px;
+}
+#contain {
+    min-width: 1280px;
+    width: 100%;
+}
+#top1 {
+    min-height: 57px;
+    position: relative;
+}
+#logo {
+    float: left;
+    margin-left: 59px;
+    margin-top: 10px;
+}
+#logo img {
+
+}
+#logo p{
+    margin-left: 10px;
+    display: inline-block;
+    font: 21px "Microsoft YaHei";
+    position: relative;
+    bottom: 7px;
+}
+
+nav {
+    height: 57px;
+    float: right;
+}
+nav ul li {
+    display: inline-block;
+    margin-right: 8px;
+}
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a{
+    display:inline-block;
+    padding: 10px 25px 22px;   /*上 左-右 下 */
+    line-height: 30px;     /*保持高度*/
+    list-style: none;
+    font: 13px "Microsoft YaHei";
+    text-decoration: none;
+    color: #787B83;
+}
+
+.host {
+    border-bottom: solid 5px #E74F4D;
+}
+.login {
+    color: #E74F4D;
+}
+nav ul li a:hover {
+    border-bottom: solid 5px #E74F4D;
+}
+
+/* 清浮动系列 */
+#top1:after ,#mtitle:after {
+    content: " ";
+    clear: both;
+    display: table;
+}
+/* top1 end */
+#top2 {
+    width: 100%;
+    min-height: 1000px;
+    max-height: 1888px;
+    position: relative;
+}
+
+#top2>img {
+    width: 100%;
+    min-width: 1280px;
+}
+/*遮罩*/
+.black {
+    width: 100%;
+    min-width: 1280px;
+    min-height: 853px;
+    height: 100%;
+    opacity: 0.2;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#mtitle {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    color: #fff;
+}
+
+#mtitle .en {
+    font: 60px "Microsoft YaHei";
+}
+
+#mtitle .zh {
+    margin-top: 10px;
+    font: 20px "Microsoft YaHei";
+    margin-left: 9px;
+    line-height: 27px;
+}
+
+#start_btm {
+    background-color: #E74F4D;
+    margin-top: 58px;
+    width: 330px;
+    height: 64px;
+    margin-left: 9px;
+}
+
+#start_btm a {
+    width: 330px;
+    height: 64px;
+    text-decoration: none;
+    color: #fff;
+    font: 32px "Microsoft YaHei";
+    line-height: 60px;
+    margin: 20px 96px;
+}
+
+#start_btm:hover {
+    background-color: #F5B9B8;
+}
+
+#subfour {
+    width: 100%;
+    height: 312px;
+    background-color: #fff;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.short {
+    margin-top: 6%;
+    width: 25%;
+    display: inline-block;
+}
+
+.short img {
+    margin-bottom: 45px;
+
+}
+.short p {
+    height: 60px;
+    font: 13px "Microsoft YaHei";
+    color: #777;
+    padding-top: 15px;
+    border-right: solid 2px;
+}
+
+.short:last-child p {
+    border: none;
+}
+
+ /*top2 end*/
+
