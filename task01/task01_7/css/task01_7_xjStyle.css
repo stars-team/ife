@@ -63,7 +63,7 @@ nav ul li a:hover {
 }
 
 /* 清浮动系列 */
-#top1:after ,#mtitle:after {
+#top1:after ,#mtitle:after ,#top2:after{
     content: " ";
     clear: both;
     display: table;
@@ -168,3 +168,582 @@ nav ul li a:hover {
 
  /*top2 end*/
 
+#top3 {
+
+}
+#about {
+    background-color: #ECECEC;
+    text-align: center;
+}
+#about img {
+    padding-top: 90px;
+}
+#about p {
+    font: 47px "Microsoft YaHei";
+    color: #8F8F8F;
+    padding-bottom: 90px;
+    padding-top: 50px;
+}
+
+#map {
+    width: 100%;
+    position: relative;
+}
+ /*  ！！！！*/
+#map>img {
+    width: 100%;
+}
+#map_color {
+    width: 100%;
+    height: 100%;
+    background-color: #AA3432;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+}
+#map_info {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    margin-top: 3%;
+}
+#map_info h2, #map_info hr{
+    font: 22px "Microsoft YaHei";
+    color: #fff;
+    display: inline-block;
+    margin-bottom: 1%;
+}
+#map_info hr {
+    width: 30px;
+    border:1px solid #fff;
+    margin:0 auto;
+}
+
+#map_info p {
+    font: 13px "Microsoft YaHei";
+    color: #fff;
+    margin-top: 0.8%;
+    margin-bottom: 3.8%;
+}
+#map_select {
+    position: relative;
+    display: inline-block;
+}
+#map_select>div{
+    display: inline-block;
+    float: left;
+    margin-right: 30px;
+}
+.city_select {
+    width: 236px;
+    height: 34px;
+    background-color: #fff;
+    border: 2px solid #fff;
+    cursor: pointer;   /*变成手*/
+
+}
+.city_select:hover {
+    border: 2px solid #F5B9B8;
+}
+.city_select>img {
+    float: right;
+    padding: 4px 2px 4px 1px;
+    background-color: #AA3432;
+    margin-top: 8px;
+    margin-right: 8px;
+}
+
+.city_select span {
+    font: 13px "Microsoft YaHei";
+    color: #787b83;
+    float: left;
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
+#ul_city {
+    border: solid 1px #AA3432;
+    position: relative;
+}
+#ul_city>li{
+    text-indent: 2.5em;
+    text-align: left;
+    font: 13px "Microsoft YaHei";
+    line-height: 30px;
+    background-color: #ccc;
+    color: #777;
+    list-style: none;
+}
+
+#ul_city > #sel_city{
+    background-color: #AA3432;
+    color: #fff;
+}
+
+/*   before大法  !!!!*/
+#sel_city:first-child::before {
+    content: " ";
+    position: absolute;
+    top:10px;
+    left:10px;
+    width:16px;
+    height:16px;
+    background:url("../images/city_checked.png") no-repeat
+}
+
+#ul_city li:hover{
+    background-color: #AA3432;
+    color: #fff;
+    cursor: pointer;
+}
+
+#explore {
+    width: 236px;
+    height: 34px;
+    background-color: #AA3432;
+    cursor: pointer;
+}
+
+#explore>span {
+    font: 16px "Microsoft YaHei";
+    color: #fff;
+    line-height: 35px;
+}
+
+#picshow {
+    background-color: #F7F7F7;
+    width: 100%;
+    padding: 10% 0;
+    text-align: center;
+}
+
+#picbox {
+    display: inline-block;
+}
+
+.picword {
+    width: 220px;
+    height: 390px;
+    float: left;
+    margin-right: 36px;
+    position: relative;
+}
+#picbox > .picword:last-child{
+    margin-right: 0;
+}
+#picbox > .picword:nth-child(2) span{
+    padding: 9px 0;
+    display: inline-block;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 0;
+}
+#picbox > .picword:nth-child(2) p {
+    padding-top: 0;
+    padding-bottom: 5px;
+}
+#picbox > .picword:nth-child(2) span:after {
+    content: " ";
+    display: inline-block;
+    padding-left: 100%;
+}
+.picword > .pic {
+    width: 100%;
+    height: 338px;
+    background-color: #fff;
+    border: solid 1px #E0E0E0;
+    position: relative;
+}
+/*.picword > .pic:nth-child(2) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}*/
+.picword .pic > img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.picword span {
+    font: 14px "Microsoft YaHei";
+    line-height: 30px;
+    color: #333;
+}
+
+.picword p {
+    font: 12px "Microsoft YaHei";
+    line-height: 20px;
+    color: #898989;
+}
+
+     /*    top3 end     */
+
+
+
+#top4 {
+    background-color: #fff;
+}
+
+#up {
+    width: 100%;
+    overflow: hidden;
+}
+
+#upleft {
+    width: 66.66666666666666%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+#upleft img {
+    width: 100%;
+}
+#upleft > #word {
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+#upleft > #word h2{
+    font: 47px "Microsoft YaHei";
+    color: #fff;
+    line-height: 0;
+}
+
+#upleft > #word h1{
+    font: 160px "Microsoft YaHei";
+    color: #fff;
+    line-height: 120%;
+}
+
+#upleft > #word p{
+    font: 22px "Microsoft YaHei";
+    color: #fff;
+    line-height: 190%;
+}
+/*  三角形*/
+#upleft .triangle1{
+    border:solid transparent;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 24px #fff solid ;
+    border-left: 24px solid transparent;
+    position: absolute;
+    transform: translate(-100%,-50%);
+    left: 100%;
+    top: 50%;
+}
+
+   /* top4 upleft end*/
+
+#upright {
+    float: right;
+    width: 33.3333333333333333333%;
+    text-align: center;
+    position: relative;
+}
+
+#upright h3 {
+    font: 22px "Microsoft YaHei";
+    color: #333333;
+    line-height: 88px;
+    margin-top: 30%;
+}
+#upright h3 > span {
+    font: 22px "Microsoft YaHei";
+    color: #E74F4D;
+}
+
+#upright > p {
+    text-align: left;
+    width: 56%;
+    margin: auto;
+    font: 13px "Microsoft YaHei";
+    color: #B0B0B0;
+    opacity: 0.8;
+    line-height: 240%;
+}
+#upright > .btm_del {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    border: solid 1px #E46669;
+    font: 14px "Microsoft YaHei";
+    color: #E46669;
+    display: inline-block;
+    width: 106px;
+    height: 34px;
+    cursor: pointer;
+    line-height: 33px;
+}
+#upright ul {
+    width: 100px;
+    margin: auto;    /*居中大法*/
+}
+#upright ul #first_bold {
+    background-color: #929293;
+}
+#upright ul li {
+    margin-right: 14px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    font: 20px "Microsoft YaHei";
+    border: 1px solid #929293;
+    border-radius: 5px;
+    color: #929293;
+}
+#upright ul li:last-child {
+    margin-right: 0;
+}
+
+#down {
+    height: 543px;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+#down > #downleft {
+    float: left;
+    width: 66.66666666666666%;
+    height: 100%;
+}
+
+#down > #downright {
+    width: 33.3333333333333333333%;
+    float: right;
+    position: relative;
+}
+
+
+
+.part1 {
+    width: 49.99999999999999999999%;
+    height: 100%;
+    background-color: #E7504D;
+    float: left;
+    position: relative;
+}
+
+.part2 {
+    width: 49.99999999999999999999%;
+    height: 100%;
+    background-color: #fff;
+    float: right;
+    position: relative;
+}
+.part_word {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+.part1 .part_word p {
+    font: 22px "黑体";
+    color: #fff;
+    line-height: 23px;
+    margin-bottom: 25px;
+}
+.part1 .part_word hr {
+    width: 30px;
+    border: solid 1px;
+    margin:0 auto;
+    display: inline-block;
+}
+
+.part1 .part_word .btm_our {
+    width: 170px;
+    height: 44px;
+    font: 22px "黑体";
+    color: #fff;
+    border: solid 1px #fff;
+    line-height: 41px;
+    margin: auto;
+    margin-top: 27px;
+    cursor: pointer;
+}
+
+.part2 > .part_word p {
+    font: 22px "黑体";
+    color: #000;
+    line-height: 23px;
+    margin-bottom: 25px;
+}
+.part2 > .part_word hr {
+    width: 30px;
+    border: solid 1px;
+    margin:0 auto;
+    display: inline-block;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+
+.part2 .part_word  .btm_our {
+    width: 170px;
+    height: 44px;
+    font: 22px "黑体";
+    color: #E7504D;
+    border: solid 1px #E7504D;
+    line-height: 41px;
+    margin: auto;
+    margin-top: 27px;
+    cursor: pointer;
+}
+
+#downright img {
+    width: 100%;
+}
+
+#downright > .train {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.triangle2 {
+    border:solid transparent;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 24px #fff solid ;
+    border-right: 24px solid transparent;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+  /*  top4 end*/
+
+#top5 {
+    background-color: #fff;
+    position: relative;
+}
+#sub_title {
+    text-align: center;
+    height: 200px;
+}
+#sub_title h3 {
+    font: 22px "黑体";
+    color: #000;
+    line-height: 23px;
+    margin-bottom: 9px;
+}
+#sub_title hr {
+    width: 30px;
+    border: solid 1px #E7504D;
+    margin: 0 auto;
+    display: inline-block;
+}
+#sub_title > p {
+    margin-top: 13px;
+}
+.p_sm {
+    font: 13px "Microsoft YaHei";
+    line-height: 12px;
+    color: #B0B0B0;
+    opacity: 0.7;
+}
+#sub_box {
+    width: 100%;
+    border: solid 1px;
+}
+#sub {
+    display: inline-block;
+    border: solid 1px;
+    position: relative;
+    height: 288px;
+    width: 1000px;
+
+}
+#sub_left {
+    width: 290px;
+    height: 288px;
+    display: inline-block;
+    float: left;
+}
+#sub_right {
+    width: 640px;
+    height: 288px;
+    float: right;
+}
+#sub_right form {
+    display: inline-block;
+}
+
+.sub_tip h4 {
+    font: 15px "Microsoft YaHei";
+    opacity: 0.7;
+    margin-bottom: 25px;
+}
+
+.sub_tip > .p_sm {
+    font: 12px "宋体";
+    line-height: 26px;
+}
+.sub_tip > .more {
+    text-align: right;
+}
+.sub_tip .more a{
+    font: 12px "宋体";
+    text-decoration: none;
+    color: #7B7473;
+}
+
+.sub_tip .more img {
+    padding-right: 10px;
+}
+
+.sub_tip .more {
+    padding-right: 8px;
+}
+#sub_right {
+    /*padding: 10px 0 0 60px;*/
+}
+#sub_right form {
+}
+#sub_right form ul {
+}
+#sub_right form ul li{
+    box-sizing:border-box;
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+#sub_right form ul li:last-child{
+    margin-bottom: 0;
+}
+#sub_right form ul li:last-child input {
+    text-align: center;
+    font: 15px "Microsoft YaHei";
+    cursor: pointer;
+    line-height: 10px;
+}
+#sub_right form ul .info {
+    width: 48.6%;
+    float: left;
+}
+#sub_right form ul .info:nth-child(2n) {
+    float: right;
+}
+#sub_right form ul li input, #sub_right form ul li textarea {
+    box-sizing:border-box;
+    width: 100%;
+    background-color: #eee;
+    font: 12px "宋体";
+    padding: 16px;
+    border: 0;     /*去边框大法*/
+}
+#sub_right form ul li textarea {
+    resize: none;
+    height: 100px;
+}
