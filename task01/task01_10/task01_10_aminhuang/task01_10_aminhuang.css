@@ -1,0 +1,54 @@
+/*
+* @Author: aminhuang
+* @Date:   2016-03-24 11:06:26
+* @Last Modified by:   aminhuang
+* @Last Modified time: 2016-03-24 11:35:07
+*/
+
+.parent {
+    display: flex;
+    
+}
+
+.child {
+    width: 150px;
+    padding: 20px;
+}
+
+@media screen and (min-width: 640px) {
+    .parent {
+        align-items: center;
+    }
+    .child {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .parent {
+        align-items: flex-start;
+        flex-flow: row wrap;
+    }
+}
+
+.first {
+    height: 120px;
+    background: #f00;
+}
+
+.second {
+    height: 100px;
+    background: #123;
+}
+
+.third {
+    height: 40px;
+    background: #090;
+}
+
+.forth {
+    height: 200px;
+    background: #0f0;
+}
+
+
