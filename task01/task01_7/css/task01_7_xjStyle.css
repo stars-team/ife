@@ -626,17 +626,18 @@ nav ul li a:hover {
 
 #top5 {
     background-color: #fff;
-    position: relative;
 }
 #sub_title {
     text-align: center;
-    height: 200px;
+    height: 300px;
+    overflow: hidden;
 }
 #sub_title h3 {
     font: 22px "黑体";
     color: #000;
     line-height: 23px;
     margin-bottom: 9px;
+    margin-top: 120px;
 }
 #sub_title hr {
     width: 30px;
@@ -655,15 +656,17 @@ nav ul li a:hover {
 }
 #sub_box {
     width: 100%;
-    border: solid 1px;
+    height: 380px;
+    position: relative;
 }
 #sub {
-    display: inline-block;
-    border: solid 1px;
-    position: relative;
+    position: absolute;
     height: 288px;
     width: 1000px;
-
+     /*居中大法*/
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
 }
 #sub_left {
     width: 290px;
@@ -746,4 +749,87 @@ nav ul li a:hover {
 #sub_right form ul li textarea {
     resize: none;
     height: 100px;
+}
+   /* top5 end*/
+#contract {
+    width: 100%;
+    height: 358px;
+    background-color: #32353E;
+    overflow: hidden;
+}
+
+#con_info {
+    text-align: center;
+    margin-top: 88px;
+}
+#con_info h2 {
+    font: 21px "Microsoft YaHei";
+    color: #fff;
+    line-height: 45px;
+}
+
+#con_info p {
+    font: 12px "Microsoft YaHei";
+    color: #fff;
+    line-height: 16px;
+    margin-bottom: 30px;
+}
+
+#email {
+    font: 18px "Microsoft YaHei";
+    height: 20px;
+    width: 410px;
+    background-color: #fff;
+    padding: 10px;
+    border: 0;
+}
+
+#fibtm {
+    font: 15px "Microsoft YaHei";
+    color: #fff;
+    height: 42px;
+    width: 96px;
+    background-color: #6F7178;
+    border: 0;
+    cursor: pointer;
+}
+#social {
+    margin-top: 36px;
+}
+#social a {
+    margin-right: 30px;
+}
+
+#social a:last-child {
+    margin-right: 0;
+}
+ /*  contract end*/
+footer {
+    background-color: #2F2F38;
+    height: 59px;
+    overflow: hidden;
+}
+#foot_box {
+    width: 80%;
+    margin: 0 auto;
+}
+#foot_box p{
+    font: 13px "Microsoft YaHei";
+    color: #fff;
+    line-height: 50px;
+}
+
+#foot_box p:first-child {
+    float: left;
+}
+
+#foot_box p:last-child {
+    float: right;
+}
+
+#foot_box p:last-child a{
+    font: 13px "Microsoft YaHei";
+    color: #fff;
+    line-height: 50px;
+    text-decoration: none;
 }
