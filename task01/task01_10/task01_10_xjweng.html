@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="keywords" content="百度,ife,非在校团队">
+    <meta name="author" content="张,星际,似水流年,awthink,零星落月">
+    <meta name="description" content="这是星际小队的第十个代码页面">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>任务十：Flexbox 布局练习</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            font-size: 0;
+        }
+        #flex_box {
+            display: flex;
+            justify-content: space-between;   /*中轴对齐*/
+            align-items: center;
+            flex-flow: row wrap;
+            border: solid 1px #999;
+            padding: 20px 20px 0 20px;
+        }
+
+        #num1, #num2, #num3, #num4 {
+            border: solid 1px #f00;
+            width: 150px;
+            margin-bottom: 20px;
+        }
+        #num1 {
+            height: 120px;
+        }
+        #num2 {
+            height: 100px;
+        }
+        #num3 {
+            height: 40px;
+        }
+        #num4 {
+            border: solid 1px #0f0;
+            height: 200px;
+        }
+
+        @media all and (max-width: 640px) {
+            #flex_box {
+                align-items: flex-start;    /* 顶端对齐*/
+            }
+            #num4 {
+                order: 0;
+            }
+            #num1 {
+                order: 1;
+            }
+            #num2 {
+                order: 2;
+            }
+            #num3 {
+                order: 3;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="flex_box">
+        <div id="num1"></div>
+        <div id="num2"></div>
+        <div id="num3"></div>
+        <div id="num4"></div>
+    </div>
+</body>
+</html>
