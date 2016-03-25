@@ -802,6 +802,7 @@ nav ul li a:hover {
 }
  /*  contract end*/
 footer {
+    width: 100%;
     background-color: #2F2F38;
     height: 59px;
     overflow: hidden;
