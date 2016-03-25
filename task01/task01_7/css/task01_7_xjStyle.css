@@ -744,7 +744,7 @@ nav ul li a:hover {
     border: 0;     /*去边框大法*/
 }
 #sub_right form ul li textarea {
-    resize: none;
+    resize: none;   /*    !!!   */
     height: 100px;
 }
    /* top5 end*/
