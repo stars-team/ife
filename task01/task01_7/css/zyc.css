@@ -1,0 +1,94 @@
+body{color:#fff;}
+
+/*public*/
+.container{width:980px;margin:0 auto;}
+.container .xinshijie{width:100px;}
+.container .nav{font-size:1.2em;}
+.container .nav li{width:84px;}
+header{height:50px;background-color:#fff;}
+header img{width:60px;}
+header a{color:#83868d;}
+header ul li{display:inline-block;}
+.banner img{width:100%;}
+.banner .banner_box{width:450px;top:30%;left:10%;font-size:1.5em;}
+.banner .banner_box .fs3em{font-size:3em;height:40px;}
+.banner .banner_box a{width:300px;height:60px;background-color:#e74f4d;text-align:center;
+				display:inline-block;line-height:50px;color:#fff;font-size:1.2em;margin-top:20px;}
+.feature{height:240px;}
+.feature li{float:left;width:25%;display:inline;}
+.feature li .feature_jpg{width:45px;height:45px;background-image:url(../images/zyc/feature.png);
+					   display:block;text-align:center;background-size:100% 400%;margin:30px auto;}
+.feature_sec{background-position:0 35%;}
+.feature_thi{background-position:0 70%;}
+.feature_four{background-position:0 100%;}
+.feature_word{width:100%;color:#8d8d8d;border-right:3px solid #bbb;padding:20px 20%;text-align:center;
+			box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+.feature li .b0{border-right:0px;}
+.unknown{background-color:#edecec;height:240px;color:#a1a1a1;}
+.unknown img{width:10%;margin:20px 45%;}
+.unknown p{color:#a1a1a1;text-align:center;font-size:36px;margin-top:30px;}
+.map{background-image:url(../images/zyc/map.jpg);background-size:100% 100%;height:260px;padding:20px;width:940px;}
+.map h2{font-size:20px;color:#fff;text-align:center;margin-top:30px;}
+.map p{font-size:18px;color:#fff;text-align:center;margin:20px auto;}
+.map .city{width:800px;margin:20px auto;height:150px;}
+.map .city div{background-color:#fff;width:160px;float:left;margin-right:40px;height:35px;line-height:35px;position:relative;}
+.map .city div div img{width:20px;height:20px;float:right;margin:7px 10px;}
+.map .city div div span{color:#a8aaaa;margin-left:10px;}
+.map .city div ul{width:158px;border:1px solid #be4e48;position:absolute;top:35px;background-color:#e3e2e4;}
+.map .city div ul li{width:158px;display:block;box-sizing:border-box;height:25px;line-height:25px;text-indent:20px;color:#787878;}
+.map .city div ul li.bg_checked{color:#fff;background:url(../images/zyc/bg_checked.jpg);background-size:100% 100%;}
+.map .city div.search{margin-right:0;background-color:#be4e48;color:#fff;text-align:center;font-size:16px;letter-spacing:5px;}
+
+.hualang{background-color:#f7f7f7;height:440px;}
+.hualang figure{float:left;width:25%;color:#9f9f9f;text-align:center;margin:20px 0;}
+.hualang figure img{width:80%;margin:0 auto;}
+.hualang figure p{color:#333;text-align:center;font-size:18px;margin-top:20px}
+.hualang figure span{color:#9f9f9f;font-size:16px;}
+.show {margin:10px auto;height:840px;}
+.show .timeh{height:423px;}
+.show img{width:640px;height:423px;float:left;}
+.show .write-arrow{width:28px;height:28px;background-color:#fff;transform:rotate(45deg);position:absolute;top:206px;right:325px;}
+.show .describe{width:340px;height:323px;padding-top:100px;}
+.show .describe h2{color:#000;text-align:center;font-size:20px;}
+.show .describe h2 span{color:red;}
+.show .describe .des_word{color:#b0b0b0;width:240px;margin:20px auto;color:#b0b0b0;}
+.show .describe .moredetail{border:1px solid #e4666a;color:#e4666a;width:100px;height:32px;
+							line-height:32px;text-align:center;margin:35px auto;}
+.show .describe .circle{width:60px;margin:20px auto;}
+.show .describe .circle div{float:left;width:10px;height:10px;border:1px solid #929292;border-radius:5px;margin-right:8px;}
+.show .describe .circle .circle_check{background-color:#929292;}
+.show .more .getmore p{text-align:center;font-size:16px;margin-top:150px;}
+.show .more .getmore div{width:100px;border:1px solid #fff;text-align:center;margin:24px auto;font-size:16px;padding:5px;}
+.show .more .getmore div.line{width:26px;border:1px solid #fff;margin:24px auto;padding:0;}
+.show .more .getmore1{width:320px;height:423px;background-color:#e74f4d;}
+.show .more .getmore2{width:320px;height:423px;}
+.show .more .getmore2 p{color:#333;}
+.show .more .getmore2 div{border:1px solid #e95a58;color:#e9605e;}
+.show .more .getmore2 div.line{border:1px solid #aaa;}
+.show .more .dengche{width:340px;float:left;}
+.join{height:700px;padding-top:50px}
+.join h2{font-size:20px;color:#000;text-align:center;}
+.join p{color:#aaa;margin-top:20px;text-align:center;}
+.join .more{width:460px;float:left;margin-top:120px;}
+.join .more section{width:280px;margin:10px auto;}
+.join .more section h2{color:#666160;text-align:left;}
+.join .more section p{text-align:left;}
+.join .joinus{width:400px;margin-right:120px;float:left;margin-top:120px;}
+.join .joinus input{background-color:#ededef;width:48%;margin-right:3%;float:left;margin-bottom:20px;}
+.join .joinus input.mr0{margin-right:0;}
+.join .joinus textarea{width:90%;color:#333;background-color:#ededef;border:0;padding:20px 5%;}
+.join .joinus input[type="button"]{width:100%;color:#333;margin-top:10px;}
+
+section.contact{background-color:#33363f;height:300px;text-align:center;padding-top:100px;}
+section.contact h2{font-size:22px;margin-bottom:20px;}
+section.contact form {margin-top:15px;margin-bottom:20px;}
+section.contact form .form_mail{width:350px;height:30px;line-height:30px;}
+section.contact form .form_button{width:50px;height:32px;line-height:32px;color:#fff;background-color:#6f7178;border:0;}
+section.contact .sharejpg{width:240px;display:inline-block;margin:0px auto;}
+section.contact .sharejpg div{float:left;width:40px;height:40px;background-image:url(../images/zyc/share.jpg);background-size:100% 450%;margin-right:20px;}
+section.contact .sharejpg .weibo{background-position:0 -40px;}
+section.contact .sharejpg .bird{background-position:0 -80px;}
+section.contact .sharejpg .global{background-position:0 -125px;}
+footer{background-color:#2f3038;height:60px;line-height:60px;font-size:20px;}
+footer .footspanl{float:left;margin-left:20px}
+footer .footspanr{float:right;margin-right:20px;}
