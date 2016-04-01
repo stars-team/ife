@@ -1,15 +1,84 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script type="text/javascript" src="mobile-util.js"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="keywords" content="百度,ife,非在校团队">
     <meta name="author" content="张,星际,似水流年,awthink,零星落月">
     <meta name="description" content="这是星际小队的第11个代码页面">
     <meta name="viewport"
-          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-    <title>Title</title>
+          content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <!-- 是否启用 WebApp 全屏模式 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- 设置状态栏的背景颜色，只有在 `"apple-mobile-web-app-capable" content="yes"` 时生效 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <!-- 禁止数字识自动别为电话号码 -->
+    <meta name="format-detection" content="telephone=no,email=no" />
+
+    <title>任务11：移动web页面</title>
+    <link rel="stylesheet" href="task01_11_xjweng.css">
 </head>
 <body>
-
+    <header>
+        <a href="javascript:void(0)">
+            <img src="images/back.png" alt="back">返回
+        </a>
+        <h1>这是标题</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>导航</li>
+            <li class="daohang">导航</li>
+            <li>导航</li>
+            <li>导航</li>
+            <li>导航</li>
+        </ul>
+    </nav>
+    <section id="top1">
+        <img id="main" src="images/main.png" alt="main">
+    </section>
+    <section id="folder">
+        <ul>
+            <li><div><img src="images/flo.png" alt="folder"></div><br />标签</li>
+            <li><div><img src="images/flo.png" alt="folder"></div><br />标签</li>
+            <li><div><img src="images/flo.png" alt="folder"></div><br />标签</li>
+            <li><div><img src="images/flo.png" alt="folder"></div><br />标签</li>
+            <li><div><img src="images/flo.png" alt="folder"></div><br />标签</li>
+        </ul>
+    </section>
+    <section id="span3rd">
+        <ul>
+            <li>
+                <img src="images/mi1.png" alt="mi1">
+                <h2>分栏一</h2>
+                <h3>分栏小标题</h3>
+            </li>
+            <li>
+                <img src="images/mi2.png" alt="mi1">
+                <h2>分栏二</h2>
+                <h3>分栏小标题</h3>
+            </li>
+            <li>
+                <img src="images/mi3.png" alt="mi1">
+                <h2>分栏三</h2>
+                <h3>分栏小标题</h3>
+            </li>
+        </ul>
+    </section>
+    <section class="model">
+        <h2>模块一</h2>
+        <br />
+        <ul>
+            <li class="side1"><img src="images/side1.png" alt="side1"></li>
+            <li>
+                <div class="text">这是文案</div>
+                <div class="text">这是文案</div>
+            </li>
+            <li>
+                <div class="text">这是文案</div>
+                <div class="text">这是文案</div>
+            </li>
+        </ul>
+    </section>
 </body>
 </html>
