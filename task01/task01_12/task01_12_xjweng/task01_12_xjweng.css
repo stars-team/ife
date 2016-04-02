@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei";
+}
+table {
+    /*border-collapse: collapse;*/
+    border: 2px solid #fff;
+}
+thead {
+    background-color: #000;
+    color: #fff;
+    text-align: left;
+}
+tbody tr:nth-child(2n) {
+    background-color: #ccc;
+}
+tbody tr:nth-child(1), tbody tr:nth-child(2), tbody tr:nth-child(3) {
+    color: #f00;
+}
+
+  /*                 table end             */
+form {
+    margin: 3rem 0;
+}
+#text_box {
+    width: 100px;
+    transition: width ease-in-out 1s;
+}
+#text_box:focus {
+    width: 300px;
+}
+
+ /*      input box end             */
+#play_box {
+    height: 111px;
+    width: 281px;
+    font-size: 0;
+    overflow: hidden;
+    position: relative;
+}
+#one {
+    background-color: #0000FF;
+}
+#two {
+    background-color: #008000;
+}
+#three {
+    background-color: #9932CC;
+}
+#play_box ul li {
+    width: 281px;
+    height: 111px;
+    position: absolute;
+}
+
+#play_ctrl {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 10;   /*最前*/
+}
+#play_box ul {
+    width: 300%;
+}
+/*     :target   突出显示活动的 HTML 锚  */
+#play_box ul li:target {
+    z-index: 2;
+    animation: tabchange 1s ease-out;
+}
+@keyframes tabchange {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: 0;
+    }
+}
+#play_ctrl a {
+    display: inline-block;
+    text-align: center;
+    margin-right: 6px;
+    text-decoration: none;
+    font-size: 16px;
+    height: 27px;
+    width: 27px;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    background-color: #fff;
+    color: #000;
+
+}
+#play_ctrl a:last-child {
+    margin-right: 0;
+}
+
+        /*          play box end                 */
