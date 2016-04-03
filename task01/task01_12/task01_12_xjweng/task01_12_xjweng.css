@@ -32,13 +32,15 @@ form {
 }
 
  /*      input box end             */
+
 #play_box {
     height: 111px;
     width: 281px;
     font-size: 0;
-    overflow: hidden;
+    /*overflow: hidden;*/
     position: relative;
 }
+
 #one {
     background-color: #0000FF;
 }
@@ -49,9 +51,11 @@ form {
     background-color: #9932CC;
 }
 #play_box ul li {
+    list-style: none;
     width: 281px;
     height: 111px;
     position: absolute;
+
 }
 
 #play_ctrl {
@@ -62,6 +66,8 @@ form {
 }
 #play_box ul {
     width: 300%;
+    height: 100%;
+    position: absolute;
 }
 /*     :target   突出显示活动的 HTML 锚  */
 #play_box ul li:target {
@@ -70,7 +76,7 @@ form {
 }
 @keyframes tabchange {
     0% {
-        left: 100%;
+        left: -100%;
     }
     100% {
         left: 0;
@@ -94,4 +100,4 @@ form {
     margin-right: 0;
 }
 
-        /*          play box end                 */
+        /*          play box end     貌似只有谷歌能用            */
