@@ -51,7 +51,7 @@ function renderAqiList() {
     var table_show = document.getElementById("aqi-table");
     var childs = table_show.childNodes;
     for(var j = childs.length-1; j >= 0; j--){
-        table_show.removeChild(childs.item(i));
+        table_show.removeChild(childs.item(j));
     }
     //正常叠加
     var thead = document.createElement("tr");
