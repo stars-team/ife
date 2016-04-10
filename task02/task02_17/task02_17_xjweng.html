@@ -17,12 +17,50 @@
 <fieldset>
     <legend>请选择查看的城市：</legend>
     <select id="city-select">
-        <option>北京</option>
     </select>
 </fieldset>
 
 <div class="aqi-chart-wrap">
+    <div class="box">
+        <div class="data_gram"></div>
+    </div>
+    <div class="box" >
+        <div class="data_gram" style="height: 10px;"></div>
+    </div>
+    <div class="box">
+        <div class="data_gram"></div>
+    </div>
 </div>
 <script src="task02_17_xjweng.js"></script>
+<style type="text/css">
+    .aqi-chart-wrap {
+        overflow: hidden;
+        zoom: 1;
+        border: 1px solid #000;
+        height: 600px;
+        width: 100%;
+    }
+
+    .box{
+        float: left;
+        height: 100%;
+        position: relative;
+    }
+    .day{
+        width: 10px;
+    }
+    .week{
+        width: 40px;
+    }
+    .month {
+        width: 80px;
+    }
+    .aqi-chart-wrap  .data_gram {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+</style>
 </body>
 </html>

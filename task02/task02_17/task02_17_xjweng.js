@@ -51,7 +51,7 @@ var chartData = {};
 
 // 记录当前页面的表单选项
 var pageState = {
-    nowSelectCity: -1,
+    nowSelectCity: "",
     nowGraTime: "day"
 };
 
@@ -59,19 +59,36 @@ var pageState = {
  * 渲染图表
  */
 function renderChart() {
+    console.log("renderChart start");
     var gram_wrap = document.getElementsByClassName("aqi-chart-wrap")[0];
-    for(var data in charData){
+    //先擦除记录
+    var childs = gram_wrap.childNodes;
+    for(var j = childs.length-1; j >= 0; j--){
+        gram_wrap.removeChild(childs.item(j));
+    }
+    //正常渲染
+    for(var data in chartData){
         var data_box = document.createElement("div");
-        data_box.setAttribute("class",'box pageState["nowGraTime"]');
+        data_box.setAttribute("class",'box ' + pageState["nowGraTime"]);
         var data_gram = document.createElement("div");
         data_gram.setAttribute("class","data_gram");
-        data_gram.style.height = 'chartData[data] px';
-        data_gram.style.backgroundColor = 'getRandomColor()';
-        data_gram.setAttribute("title", 'data + ":" +chartData[data]');
+        data_gram.style.height = chartData[data] + ' px' ;
+        data_gram.style.backgroundColor = getRandomColor();
+        data_gram.setAttribute("title", data + ":" +chartData[data]);
         data_box.appendChild(data_gram);
         gram_wrap.appendChild(data_box);
     };
 
+}
+/**
+ * 生成随机颜色
+ */
+function getRandomColor() {
+    return  '#' +
+        (function(color){
+            return (color +=  '0123456789abcdef'[Math.floor(Math.random()*16)])
+            && (color.length == 6) ?  color : arguments.callee(color);
+        })('');
 }
 
 /**
@@ -80,7 +97,7 @@ function renderChart() {
 function graTimeChange() {
     // 确定是否选项发生了变化
     var typeNow = getTimeNow();
-    console(typeNow);
+    console.log(typeNow);
     if(typeNow === pageState['nowGraTime']){
         return;
     }else {
@@ -95,14 +112,21 @@ function graTimeChange() {
  * 获取当前时间类型
  */
 function getTimeNow() {
-    var types = document.getElementsByClassName("gra-time");
+    var types = document.getElementsByName("gra-time");
     var typeNow = "";
     //[].forEach.call()大法
-    [].forEach.call(types,function (v) {
+    /*[].forEach.call(types,function (v) {
         //判断选中大法
-        if(v.checked)
+        console.log(v.checked);
+        if(v.checked == checked)
             typeNow = v.value;
-    });
+    });*/
+    console.log(types);
+    for (var v = 0; v < types.length; v++){
+        console.log(types[v].type);
+        if (types[v].checked)
+            typeNow = types[v].value;
+    }
     console.log(typeNow);
     return typeNow;
 }
@@ -154,7 +178,64 @@ function initCitySelector() {
  */
 function initAqiChartData() {
     // 将原始的源数据处理成图表需要的数据格式
+    var type = getTimeNow();
+    var city = document.getElementById("city-select").value;
+    pageState['nowGraTime'] = type;
+    pageState['nowSelectCity'] = city;
     // 处理好的数据存到 chartData 中
+
+    switch (type){
+        case "day":
+            chartData = aqiSourceData[city];
+            console.log("chartData length: " + chartData.length);
+            break;
+        case "week":
+            chartData = {};
+            var count = 0,total =0,week = 1,date,weekDay;
+            for (var v in aqiSourceData[city]){
+                date = new Date(v);
+                weekDay = date.getDay();
+                if(weekDay == 6){
+                    count++;
+                    total += aqiSourceData[city][v];
+                    chartData["week"+week] = Math.round(total/count);
+                    count = 0;
+                    total = 0;
+                    week++;
+                }else {
+                    count++;
+                    total += aqiSourceData[city][v];
+                }
+            }
+            //最后一波漏网
+            chartData["week"+week] = Math.round(total/count);
+            break;
+        case "month":
+            chartData = {};
+            var count = 0, total = 0, month =-1,date;
+            for (var v in aqiSourceData[city]){
+                date = new  Date(v);
+                if (month == -1){
+                    month = date.getMonth() + 1;
+                }else if (date.getMonth() + 1 != month){
+                    chartData[month + "m"] = Math.round(total/count);
+                    month = date.getMonth() + 1;
+                    total = 0;
+                    count = 0;
+                }
+                count++;
+                total += aqiSourceData[city][v];
+            }
+            //最后一波漏网
+            chartData[month + "m"] = Math.round(total/count);
+            console.log("chartData length: " + chartData.length);
+            break;
+        /*default:
+            console.log("nowGraTime type:" + type +" error!");*/
+    }
+    //charData转成JSON格式
+    console.log(JSON.stringify(chartData));
+    renderChart();
 }
 
 /**
