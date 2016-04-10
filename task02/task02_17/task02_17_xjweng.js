@@ -72,7 +72,8 @@ function renderChart() {
         data_box.setAttribute("class",'box ' + pageState["nowGraTime"]);
         var data_gram = document.createElement("div");
         data_gram.setAttribute("class","data_gram");
-        data_gram.style.height = chartData[data] + ' px' ;
+        data_gram.style.height = chartData[data] + "px" ;
+        /*console.log(data_gram.style.height);*/
         data_gram.style.backgroundColor = getRandomColor();
         data_gram.setAttribute("title", data + ":" +chartData[data]);
         data_box.appendChild(data_gram);
@@ -228,7 +229,6 @@ function initAqiChartData() {
             }
             //最后一波漏网
             chartData[month + "m"] = Math.round(total/count);
-            console.log("chartData length: " + chartData.length);
             break;
         /*default:
             console.log("nowGraTime type:" + type +" error!");*/
