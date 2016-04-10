@@ -76,6 +76,9 @@ function renderChart() {
         /*console.log(data_gram.style.height);*/
         data_gram.style.backgroundColor = getRandomColor();
         data_gram.setAttribute("title", data + ":" +chartData[data]);
+        var span = document.createElement("span");
+        span.innerHTML = data + " : " +chartData[data];
+        data_gram.appendChild(span);
         data_box.appendChild(data_gram);
         gram_wrap.appendChild(data_box);
     };
@@ -219,7 +222,7 @@ function initAqiChartData() {
                 if (month == -1){
                     month = date.getMonth() + 1;
                 }else if (date.getMonth() + 1 != month){
-                    chartData[month + "m"] = Math.round(total/count);
+                    chartData[month + "month"] = Math.round(total/count);
                     month = date.getMonth() + 1;
                     total = 0;
                     count = 0;
@@ -228,7 +231,7 @@ function initAqiChartData() {
                 total += aqiSourceData[city][v];
             }
             //最后一波漏网
-            chartData[month + "m"] = Math.round(total/count);
+            chartData[month + "month"] = Math.round(total/count);
             break;
         /*default:
             console.log("nowGraTime type:" + type +" error!");*/

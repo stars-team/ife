@@ -39,10 +39,26 @@
         position: relative;
     }
     .data_gram{
-        animation: show_gram 2s ease-out;
+        animation: show_gram 1s ease-out;
+        cursor: pointer;
+        position: relative;
+    }
+    .data_gram span {
+        font: 12px "Microsoft YaHei";
+        display: none;
     }
     .data_gram:hover {
         box-shadow:0px 0px 6px #f00;
+        z-index: 2;
+    }
+    .data_gram:hover span{
+        display: inline-block;
+        white-space:nowrap;
+        background: #ffc;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        z-index: 3;
     }
     .day{
         width: 1.0866666666666666666666666%;
