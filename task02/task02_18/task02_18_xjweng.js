@@ -44,8 +44,6 @@ function addNum(btn_type) {
 function addHandle(btn_type) {
     addNum(btn_type);
     renderQue();
-    //清空输入框
-    document.getElementById("num_in").value = "";
 }
 /**
  * 根据按钮类型出队
@@ -78,7 +76,8 @@ function renderQue() {
         nspan.innerHTML = num[i];
         que.appendChild(nspan);
     }
-
+    //清空输入框
+    document.getElementById("num_in").value = "";
 }
 /**
  * 初始化函数
