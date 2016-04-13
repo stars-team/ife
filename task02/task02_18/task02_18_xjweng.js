@@ -51,12 +51,13 @@ function addHandle(btn_type) {
  */
 function delHandle(btn_type) {
     if(btn_type === "left_out"){
-            num.shift();
+        //num.shift();
+        alert(num.shift());
     }else if(btn_type === "right_out"){
-        num.pop();
+        alert(num.pop());
     }else {
         //任点一个传下标到btn_type
-        num.splice(btn_type,1);
+        alert(num.splice(btn_type,1));
     }
     renderQue();
 }
