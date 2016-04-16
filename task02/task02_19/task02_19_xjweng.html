@@ -7,7 +7,58 @@
     <title>IFE JavaScript Task 02_19</title>
 </head>
 <body>
+<input id="num_in" type="text">
+<span id="_in">
+    <button id="left_in">左侧入</button>
+    <button id="right_in">右侧入</button>&nbsp;&nbsp;&nbsp;&nbsp;
+</span>
 
+<span id="_out">
+    <button id="left_out">左侧出</button>
+    <button id="right_out">右侧出</button>
+</span>
+<button id="total_sort">冒泡排序</button>
+<div id="queue">
+    <div class="data_box">
+        <div class="data_gram"><span>111</span></div>
+    </div>
+</div>
 <script src="task02_19_xjweng.js"></script>
+<style type="text/css">
+    *{
+        font: 16px "黑体";
+    }
+    #queue {
+        height: 500px;
+        overflow: hidden;
+        border: solid 1px;
+    }
+    #queue .data_box {
+        height: 100%;
+        border: solid 1px #0f0;
+        float: left;
+        width: 20px;
+        position: relative;
+
+    }
+    #queue .data_box .data_gram {
+        border: solid 1px #f00;
+        width: 20px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+    }
+    #queue span {
+        display: inline-block;
+        text-shadow: 0 0 5px #FFFF33;
+        font: 13px "Microsoft YaHei";
+        line-height: 13px;
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+
+    }
+</style>
 </body>
 </html>
