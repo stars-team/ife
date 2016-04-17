@@ -108,8 +108,21 @@ function getRandomColor() {
 /**
  * 冒泡排序
  */
+function bubSorthand(){
+    bubSort();
+    renderQue();
+}
 function bubSort() {
-    
+    for(var i = 0; i < num.length; i++){
+        for (var j = i; j < num.length; j++){
+            if(num[i] > num[j]){
+                var temp = num[i];
+                num[i] = num[j];
+                num[j] = temp;
+                //setTimeout("renderQue",1000);
+            }
+        }
+    }
 }
 /**
  * 初始化函数
@@ -141,6 +154,8 @@ function init() {
         }
         console.log(num);
     });
+
+    document.getElementById("total_sort").addEventListener("click",bubSorthand);
 }
 
 init();
