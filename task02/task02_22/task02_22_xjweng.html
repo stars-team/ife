@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>任务二十二：JavaScript和树（一）</title>
+    <style type="text/css">
+        *{
+            margin:0;
+            padding: 0;
+            font-size: 0;
+        }
+        .root {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: relative;
+            top: 50vh;
+            left: 50vw;
+            border: solid 1px #000;
+            margin-left: -35vw;
+            margin-top: -30vh;
+            width: 70vw;
+            height: 60vh;
+        }
+        .child_1 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 42%;
+            height: 80%;
+            border: solid 1px #0f0;
+        }
+        .child_2 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 80%;
+            height: 80%;
+            border: solid 1px red;
+        }
+        .child_3 {
+            width: 36%;
+            height: 80%;
+            border: solid 1px blue;
+        }
+        input {
+            font:  14px "Microsoft YaHei";
+            width: 70px;
+            line-height: 38px;
+            color: #eee;
+            margin-left: 10px;
+            position: relative;
+            left: 35vw;
+            top: 55vh;
+            background-color: cornflowerblue;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div class="root">
+    <div class="child_1">
+        <div class="child_2">
+            <div class="child_3"></div>
+            <div class="child_3"></div>
+        </div>
+    </div>
+    <div class="child_1">
+        <div class="child_2">
+            <div class="child_3"></div>
+            <div class="child_3"></div>
+        </div>
+    </div>
+</div>
+<input type="button" value="前序">
+<input type="button" value="中序">
+<input type="button" value="后序">
+<script type="text/javascript" src="task02_22_xjweng.js"></script>
+</body>
+</html>
