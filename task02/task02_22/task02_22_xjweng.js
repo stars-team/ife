@@ -52,9 +52,28 @@ function postOrder(node) {
         childList.push(node);
     }
 }
+//颜色变化
 function changeColor() {
-
+    var i = 0;
+    childList[i].style.backgroundColor = 'blue';
+    timer = setInterval(function (argument) {
+        i++;
+        if (i < childList.length){
+            childList[i-1].style.backgroundColor = '#fff';
+            childList[i].style.backgroundColor = 'blue';
+        }else{
+            clearInterval(timer);
+            //最后一个元素
+            childList[childList.length - 1].style.backgroundColor = '#fff';
+        }
+    },500);
 }
+//初始化样式
 function reset() {
-    
+    childList = [];
+    clearInterval(timer);
+    var childs = document.getElementsByTagName('div');
+    for (var i = 0; i < childs.length; i++){
+        childs[i].style.backgroundColor = '#fff';
+    }
 }
